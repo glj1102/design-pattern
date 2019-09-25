@@ -35,11 +35,10 @@ class SendFactory {
 
 }
 
-function run() {
+{
     const factory = new SendFactory();
     const sender = factory.produce("mail");
     // const sender = factory.produceMail();
     // const sender = SendFactory.produceMail();
     sender.send();
 }
-run();

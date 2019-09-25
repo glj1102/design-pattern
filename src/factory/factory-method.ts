@@ -16,9 +16,8 @@ class SendSmsFactory implements Provider {
     }
 }
 
-function run() {
+{
     const factory = new SendMailFactory();
     const sender = factory.produce();
     sender.send();
 }
-run();

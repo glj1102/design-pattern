@@ -1,0 +1,19 @@
+{
+    "name": "tech-share",
+    "version": "1.0.1",
+    "description": "Messaging and Notification Service for Worktile R&D",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git"
+    },
+    "keywords": [],
+    "license": "LICENSE",
+    "bugs": {},
+    "homepage": "https://github.com/glj1102/share#readme",
+    "devDependencies": {
+        "@types/node": "^12.7.5",
+        "typescript": "^3.6.3"
+    },
+    "dependencies": {}
+}
