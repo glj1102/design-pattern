@@ -38,7 +38,7 @@ class SingletonCache1 {
     }
 
     public static otherStaticMethod() {
-        console.log("other operation, new instance");    
+        console.log("other operation, not new instance");    
     }
 
     setCache(key: string, value: string) {

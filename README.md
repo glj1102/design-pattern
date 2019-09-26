@@ -99,7 +99,7 @@ https://www.cnblogs.com/geek6/p/3951677.html
 1. 用处：当对象像积木一样灵活，并且需要使用者来自己组装时可以采用此模式，好处是不需要知道细节，调用方法即可，常用来构建如Http请求、生成器等。
 1. 注意：和工厂模式的区别，工厂是生产产品，谁生产，怎样生产无所谓，而建造者重在组装产品，层级不一样。
 
-示例： builder/builder.ts
+示例： `builder/builder.ts`
 
 
 ### <a name="prototype-chain"></a>原型模式(Prototype)
@@ -200,6 +200,9 @@ https://www.cnblogs.com/geek6/p/3951677.html
 
 
 ### <a name="chain-of-responsibility"></a>责任链模式
+
+有多个对象，每个对象持有对下一个对象的引用，这样就会形成一条链，请求在这条链上传递，直到某一对象决定处理该请求。但是发出者并不清楚到底最终那个对象会处理该请求，所以，责任链模式可以实现，在隐瞒客户端的情况下，对系统进行动态的调整
+示例：`chain-of-responsibility/chain-of-responsibility.ts`
 
 ### <a name="command"></a>命令模式
 
