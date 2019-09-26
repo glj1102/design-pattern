@@ -172,25 +172,45 @@ https://www.cnblogs.com/geek6/p/3951677.html
 
 
 ## 行为型模式
+- [策略模式](#strategy)
+- [观察者模式](#observer)
+- [模板方法模式](#template-method)
+- [责任链模式](#chain-of-responsibility)
+- [命令模式](#command)
+- [迭代子模式](#iterator)
+- [状态模式](#state)
+- [备忘录模式](#memento)
+- [访问者模式](#visitor)
+- [中介者模式](#mediator)
+- [解释器模式](#interpreter)
 
-### 策略模式
+### <a name="strategy"></a>策略模式
+策略模式定义了一系列算法，并将每个算法封装起来，使他们可以相互替换，且算法的变化不会影响到使用算法的客户。需要设计一个接口，为一系列实现类提供统一的方法，多个实现类实现该接口，还可以设计一个抽象类（可有可无，属于辅助类），提供辅助函数
 
-### 观察者模式
+示例：`strategy/strategy.ts`
 
-### 模板方法模式
+### <a name="observer"></a>观察者模式
+观察者模式很好理解，类似于邮件订阅和RSS订阅，当我们浏览一些博客或wiki时，经常会看到RSS图标，就这的意思是，当你订阅了该文章，如果后续有更新，会及时通知你。其实，简单来讲就一句话：当一个对象变化时，其它依赖该对象的对象都会收到通知，并且随着变化！对象之间是一种一对多的关系
 
-### 责任链模式
+示例： `observer/observer.ts`
 
-### 命令模式
+### <a name="template-method"></a>模板方法模式
+模板方法模式，就是指：一个抽象类中，有一个主方法，再定义1...n个方法，可以是抽象的，也可以是实际的方法，定义一个类，继承该抽象类，重写抽象方法，通过调用抽象类，实现对子类的调用
+示例：`template-method/template-method.ts`
 
-### 迭代子模式
 
-### 状态模式
+### <a name="chain-of-responsibility"></a>责任链模式
 
-### 备忘录模式
+### <a name="command"></a>命令模式
 
-### 访问者模式
+### <a name="iterator"></a>迭代子模式
 
-### 中介者模式
+### <a name="state"></a>状态模式
 
-### 解释器模式
+### <a name="memento"></a>备忘录模式
+
+### <a name="visitor"></a>访问者模式
+
+### <a name="mediator"></a>中介者模式
+
+### <a name="interpreter"></a>解释器模式
