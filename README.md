@@ -123,12 +123,16 @@ https://www.cnblogs.com/geek6/p/3951677.html
 
     当希望将一个类转换成满足另一个新接口的类时，可以使用类的适配器模式，创建一个新类，继承原有的类，实现新的接口即可。
 
-    核心思想就是：有一个Source类，拥有一个方法，待适配，目标接口是Targetable，通过Adapter类，将Source的功能扩展到Targetable里。 示例 `adapter/adapter.ts`
+    核心思想就是：有一个Source类，拥有一个方法，待适配，目标接口是Targetable，通过Adapter类，将Source的功能扩展到Targetable里。 
+    
+    示例 `adapter/adapter.ts`
 2. 对象的适配器模式:
 
     当希望将一个对象转换成满足另一个新接口的对象时，可以创建一个Wrapper类，持有原类的一个实例，在Wrapper类的方法中，调用实例的方法就行
 
-    基本思路和类的适配器模式相同，只是将Adapter类作修改，这次不继承Source类，而是持有Source类的实例，以达到解决兼容性的问题。 示例 `adapter/adapter.ts`
+    基本思路和类的适配器模式相同，只是将Adapter类作修改，这次不继承Source类，而是持有Source类的实例，以达到解决兼容性的问题。 
+    
+    示例 `adapter/adapter.ts`
 3. 接口的适配器模式:
 
     有时我们写的一个接口中有多个抽象方法，当我们写该接口的实现类时，必须实现该接口的所有方法，这明显有时比较浪费，因为并不是所有的方法都是我们需要的，有时只需要某一些，此处为了解决这个问题，我们引入了接口的适配器模式
@@ -138,15 +142,18 @@ https://www.cnblogs.com/geek6/p/3951677.html
     
 ### <a name="proxy"></a>代理模式
 代理模式就是多一个代理类出来，替原对象进行一些操作，比如我们在租房子的时候回去找中介，为什么呢？因为你对该地区房屋的信息掌握的不够全面，希望找一个更熟悉的人去帮你做，此处的代理就是这个意思。再如我们有的时候打官司，我们需要请律师，因为律师在法律方面有专长，可以替我们进行操作，表达我们的想法
+
 示例： `proxy/proxy.ts`
 
 ### <a name="decorator"></a>装饰器模式
 装饰模式就是给一个对象增加一些新的功能，而且是动态的，要求装饰对象和被装饰对象实现同一个接口，装饰对象持有被装饰对象的实例 
+
 示例：`decorator/decorator-1.ts decorator/decorator-2.ts`
 
 ### <a name="facade"></a>外观模式
 
 外观模式是为了解决类与类之间的依赖关系的，就是将他们的关系放在一个Facade类中，降低了类类之间的耦合度，该模式中没有涉及到接口
+
 示例： `facade/facade.ts`
 
     如果没有Computer类，那么，CPU、Memory、Disk他们之间将会相互持有实例，产生关系，这样会造成严重的依赖，修改一个类，可能会带来其他类的修改，这不是我们想要看到的，有了Computer类，他们之间的关系被放在了Computer类里，这样就起到了解耦的作用，这，就是外观模式！
@@ -155,6 +162,7 @@ https://www.cnblogs.com/geek6/p/3951677.html
 桥接模式就是把事物和其具体实现分开，使他们可以各自独立的变化。
 
 桥接的用意是：将抽象化与实现化解耦，使得二者可以独立变化，像我们常用的JDBC桥DriverManager一样，JDBC进行连接数据库的时候，在各个数据库之间进行切换，基本不需要动太多的代码，甚至丝毫不用动，原因就是JDBC提供统一接口，每个数据库提供各自的实现，用一个叫做数据库驱动的程序来桥接就行了
+
 示例： `bridge/bridge.ts`
 
 ### <a name="composite"></a>组合模式(Composite)
@@ -196,12 +204,14 @@ https://www.cnblogs.com/geek6/p/3951677.html
 
 ### <a name="template-method"></a>模板方法模式
 模板方法模式，就是指：一个抽象类中，有一个主方法，再定义1...n个方法，可以是抽象的，也可以是实际的方法，定义一个类，继承该抽象类，重写抽象方法，通过调用抽象类，实现对子类的调用
+
 示例：`template-method/template-method.ts`
 
 
 ### <a name="chain-of-responsibility"></a>责任链模式
 
 有多个对象，每个对象持有对下一个对象的引用，这样就会形成一条链，请求在这条链上传递，直到某一对象决定处理该请求。但是发出者并不清楚到底最终那个对象会处理该请求，所以，责任链模式可以实现，在隐瞒客户端的情况下，对系统进行动态的调整
+
 示例：`chain-of-responsibility/chain-of-responsibility.ts`
 
 ### <a name="command"></a>命令模式
