@@ -6,7 +6,7 @@ class Origin {
     const origin = new Origin();
     origin.name = "brook";
 
-    let cloneObj = Object.create(origin);
+    const cloneObj = Object.create(origin);
     console.log(cloneObj.name); // brook
 }
 
@@ -20,7 +20,7 @@ class OriginTest implements Clonable<OriginTest>{
     name: string;
 
     clone(): OriginTest{
-        let target = new OriginTest();
+        const target = new OriginTest();
         target.name = this.name;
         return target;
     }
