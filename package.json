@@ -1,5 +1,5 @@
 {
-    "name": "tech-share",
+    "name": "design-pattern",
     "version": "1.0.1",
     "description": "Messaging and Notification Service for Worktile R&D",
     "main": "index.js",
@@ -10,7 +10,7 @@
     "keywords": [],
     "license": "LICENSE",
     "bugs": {},
-    "homepage": "https://github.com/glj1102/share#readme",
+    "homepage": "https://github.com/glj1102/design-pattern#readme",
     "devDependencies": {
         "@types/node": "^12.7.5",
         "typescript": "^3.6.3"
